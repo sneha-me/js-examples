@@ -1,0 +1,27 @@
+	.main_table{
+			border-collapse : collapse;
+			border-color : gray;
+			}
+			
+		.col{
+			
+			text-align : center;
+			padding : 0 25px;
+			}
+			
+		.colRows{
+			width : 55%;
+			text-align : center;
+			padding : 10px;
+			background-color : rgb(82,117,185);
+			color : white;
+			font-family : arial;
+		}
+		
+		tr:nth-child(even){
+			background-color : #D2D5D6;
+			}
+			
+		tr{
+			height : 50px;
+		}

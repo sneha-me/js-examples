@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> DEMO </title>
+	<link href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"></link>
+	<script src= "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+	
+	<script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="dynamicTable.js"></script>
+	<link href="dynamicTable.css" rel="stylesheet"> </link>
+	
+	<style>
+		.vertical_line{
+			background-color : lightgray;
+			width : 1px;
+			height : 450px;
+			position : absolute;
+			left : 550px;
+		}
+		
+	</style>
+	<script>
+	  $(document).ready(function(){
+		var servicesObj = {
+					header : ['web', 'Development'],
+					rowsHeading : ['Loyalty','Reservation','Location','Campaign'];
+				}
+				
+			alert("count");
+			generateTable(servicesObj,"main_id");
+	  });
+	  
+	 </script>
+</head>
+
+<body>
+	<hr/>
+	<div class="container-fluid">
+	<div class="row-fluid">
+	<div id="main_id" class="col-md-5">
+		aaaaa
+	</div>
+	<div class="vertical_line"> </div> 
+	<div class="col-md-6">ccccc </div>
+	</div>
+	</div>
+
+
+</body>
+</html>
