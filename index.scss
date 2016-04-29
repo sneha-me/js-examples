@@ -1,0 +1,336 @@
+$nav-primary-text-color: #fff;  
+$nav-color: #B90F2B;
+$nav-active: #9D0720;
+$menu-border-bottom-color: #D11F19;
+$nav-body-color: #000;
+$nav-header-text-color: #F3F3F3;
+$nav-header-font-weight: 200;
+
+.nav-component{
+	background-color: $nav-body-color;
+	font-size: 12px;
+}
+
+.navbar{
+	margin: 0px;
+	border-radius: 0;
+	background-color:$nav-primary-text-color;
+	
+}
+
+.nav.navbar-nav.navbar-right {
+    margin-right: -20px;
+}
+
+.paddingtop{
+	padding-top: 9px;
+}
+
+.ion-ios-people{
+	font-size: 21px;
+}
+.navbar-default {
+    background-color: $nav-color; 
+    border-color: $nav-body-color;
+	
+	.navbar-nav>li{
+		background: $nav-color;
+		
+		>a{      
+				background: $nav-color;
+				font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+				font-size: 1.5em;
+				font-weight: $nav-header-font-weight;
+				color: $nav-header-text-color;
+				
+			&:hover, &:focus{
+				background: $nav-active;
+				font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+				font-size: 1.5em;
+				font-weight: $nav-header-font-weight;
+				margin-left: 0; 
+				color: $nav-header-text-color;
+			}
+		  }
+	}
+	
+	.navbar-text {
+			color: $nav-primary-text-color;
+			font-family: archer;
+			font-size: 1.3em;
+			font-weight: normal;
+			margin-left: 1em;
+			margin-top: 0;
+		}
+	
+	.navbar-nav .open .dropdown-menu > li > a {
+		color: $nav-primary-text-color;
+		line-height: 3em;
+		
+		&:hover, &:focus{
+				color: $nav-primary-text-color;
+				line-height: 3em;
+			}
+		}
+		
+	.navbar-toggle {
+			border-color: $nav-primary-text-color;
+			
+			&:focus, &:hover{
+				background-color: $nav-color;
+			}
+		}
+		
+	.navbar-collapse, .navbar-default .navbar-form {   /* top white border removal */
+			border-color: $nav-color;
+		}
+		
+	.navbar-toggle {
+			border-color: $nav-primary-text-color;
+			
+			.icon-bar {
+				background-color: $nav-primary-text-color;
+			}
+			
+			&:focus, &:hover{
+				 background-color: $nav-color;
+			}
+		}
+		
+	.navbar-nav>.open>a,
+	.navbar-nav>.open>a:focus,
+	.navbar-nav>.open>a:hover {
+		color: $nav-primary-text-color;
+		background-color: transparent;
+	}
+		
+
+}
+
+.navbar-brand {
+    float: left;
+    font-size: 18px;
+    height: 50px;
+    line-height: 20px;
+	padding: 15px 0;
+	
+	> img {
+		display: inline-block;
+		width: 230px;
+		padding-left: 20px;
+	}
+
+ }
+ 
+ .nav.navbar-nav a i{
+	padding-right: 10px;
+}
+
+.dropdown-menu{							
+	overflow: auto;
+	background: $nav-color;
+	border-top-color: $nav-primary-text-color;
+	top: 52px;
+	font-size: 12px;
+	padding: 0px;
+	
+	>li>a {					
+		line-height: 3;
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 1.5em;
+		font-weight: $nav-header-font-weight;
+		color: $nav-header-text-color;
+		margin: 0 10px;
+		border-bottom: 1px solid $menu-border-bottom-color;
+    
+		&:focus, &:hover{
+			color: $nav-primary-text-color;
+			text-decoration: none;
+			background-color: $nav-active;
+		} 
+	}
+	
+	> li:focus, > li:hover {
+		color: $nav-primary-text-color;
+		text-decoration: none;
+		background-color: $nav-active;
+	} 
+	
+	hr {
+        border: 0;
+		border-top: 1px solid $menu-border-bottom-color;
+		margin: 4px 10px;
+	} 
+	
+	
+}
+
+.dropdown-toggle{
+		height: 51px;
+	}
+
+.ion-arrow-up-b{ 		
+	overflow: auto;
+	display: none;
+	top: 15px;
+	position: relative;
+	right: 21px;
+}
+
+.logout{				
+	background-color: $nav-active;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: $nav-header-text-color;
+    font-weight: normal;
+    text-align: center;
+}
+
+.open > .dropdown-menu {
+	max-height: 800px;			
+	overflow: auto;
+}
+
+.ion-navicon{
+	font-size: 30px;
+}
+ 
+.glyphicon {
+	font-size: 19px;
+}
+#navbar-links > ul > li {
+	margin-left: 0px; 
+	padding-left: 0px;
+}
+
+.ion-person-stalker, .ion-ios-person, .ion-ios-box, .ion-location {
+	font-size: larger;
+}
+
+.navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+    overflow-x: visible;
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+#nav_dropdown{
+	width: 80px;
+	height: 53px;
+}
+
+/* media queries to for smaller view port */
+/* Portrait and Landscape */
+ 
+@media (max-width: 767px){
+	.navbar-nav .open .dropdown-menu {
+		position: static;
+		float: none;
+		width: auto;
+		margin-top: 0;
+		background-color: transparent;
+		border: 1px solid;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		border-color: $nav-primary-text-color $nav-color $nav-color $nav-color;
+		margin-left: 1.5em;
+		font-size: 0.9em;
+		margin-bottom: 0;
+	}
+	.navbar-default .navbar-text {
+	  left: -12px;
+	  position: fixed;
+	  top: 24px;
+	}
+
+	.ion-arrow-up-b {
+		overflow: auto;
+		display: none;
+		top: 44px;  /* 27px  */
+		position: absolute;
+		right: 0;
+	}
+	
+	.navbar-default .navbar-nav {
+		> li > a:hover, > li > a:focus{
+			background-color: $nav-color;
+			}
+	
+		.open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+			color: $nav-primary-text-color;
+			background-color: transparent;
+		}
+	}
+	
+	#nav_dropdown{
+		width: 100%;
+		height: 0;
+		float: right;
+		top: 0px;
+		position: absolute;
+		z-index: 0;
+	}
+	
+	.navbar-toggle {
+		display: none;
+	}
+	.dropdown-toggle {
+		margin-top: 8px;
+		margin-right: 15px;
+		background-color: transparent;
+		background-image: none;
+		margin-bottom: 8px;
+		position: relative;
+		float: right;
+		padding: 9px 10px;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		height: 51px;
+		width: 19px;
+	}
+	
+	.navbar-nav .open .dropdown-menu {
+		position: absolute;
+		float: none;
+		width: auto;
+		margin-top: 0px;
+		background-color: transparent;
+		border-width: 1px;
+		border-style: solid;
+		-moz-border-top-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		border-image: none;
+		box-shadow: none;
+		border-color: $nav-primary-text-color $nav-color $nav-color;
+		margin-left: 0;
+		font-size: 0.9em;
+		margin-bottom: 0px;
+		top: 66px;
+		right: 0;
+		background-color: $nav-color;
+	}
+	
+	.navbar-text{
+		position: absolute;
+		right: 111px; 
+		top: 10px;
+		white-space: nowrap;
+		
+	}
+	.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+		border-color: $nav-color;
+	}
+	
+	.dropdown-menu li a{
+		line-height: 2.5em;
+	}
+	
+  .hidden-xs {
+    display: none !important;
+  }
+
+} 
+ 
+ 
