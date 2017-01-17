@@ -1,0 +1,18 @@
+#main-content{
+	width: 60%;
+    background: beige;
+    left: 20%;
+    position: relative;
+
+}
+.header{
+	text-align:center;
+}
+#items{
+	
+    border-collapse: collapse;
+    border-color: black beige;
+}
+#items th,td{
+		padding:10px;
+	}
