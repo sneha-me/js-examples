@@ -1,0 +1,71 @@
+<!-- implement auto complete in JS  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+        var autotags = ['Java', 'JavaScript', 'JSON', 'jagan', 'html', 'html5', 'Angular', 'angular2'];
+            
+            function autoComplete(input){
+                var searchText = input;
+                var matchedArr = [];
+                for(i=0; i<autotags.length; i++){
+                    //autoTagsLower = autotags[i];
+                    if((input != '') && (autotags[i].toLowerCase().indexOf(input.toLowerCase()) > -1)){
+                        //console.log("Found");
+                        console.log(autotags[i]);
+                        matchedArr.push(autotags[i]);
+                        
+                        
+                    }
+                }
+                console.log(matchedArr);
+                document.getElementById("searchedOutput").innerHTML = "";
+                for(j=0;j<matchedArr.length;j++){
+                    
+                    var newP = document.createElement("p");
+                    var textNode = document.createTextNode(matchedArr[j]);
+                    newP.appendChild(textNode);
+                    document.getElementById("searchedOutput").appendChild(newP);
+                }
+                   
+                
+                
+                return matchedArr;
+                
+            }
+            
+           // autoComplete('angu');
+           /* var str = "sneha";
+            function findChar(char){
+                var found = (str.indexOf(char) > -1);
+                console.log(found);
+                return found;
+                
+            }
+            
+            findChar('e');  */
+            
+            function callAutoComplete(){
+                var inp = document.getElementById("search").value;
+                autoComplete(inp);
+            }
+        
+        </script>
+        <style>
+           #searchedOutput{
+             border: 1px solid black;
+                width: 172px;
+           }
+            
+        </style>
+    </head>
+    <body>
+        <input type="text" value='' placeholder="search Text" id="search" onkeyup="callAutoComplete()"/>
+        <div id="searchedOutput">
+            
+        </div>
+        
+    </body>
+
+</html>

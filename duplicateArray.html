@@ -1,0 +1,54 @@
+<script>
+    /* 1. remove duplicate values from array */
+    function removeDuplicateArray(arr){
+        var exists = {};
+        var outarr = [];
+        
+        for(i=0;i<arr.length;i++){
+            elem = arr[i];
+            if(!exists[elem]){
+                outarr.push(elem);
+                exists[elem] = true;
+            }
+            
+        }
+    return outarr;
+    }
+var dupArr = [3,2,1,2,3,4,5,2,3,1];
+   var newArray = removeDuplicateArray(dupArr); 
+console.log(newArray);
+    
+
+ /* 2. join/merge 2 arrays */
+    
+   var arr1 = [10,20,30];
+   var arr2 = [20,40];
+   // var mergedArray = [10,20,30,20,40];
+
+   var mArray = arr1.concat(arr2); 
+   console.log(mArray);
+    
+/* 3. remove duplicate values and den merge array */
+    function removeDuplicateAndMerge(arr1,arr2){
+        var exists = {};
+        var mergeArray = [];
+        
+        for(i=0; i<arr1.length; i++){
+            var elem = arr1[i];
+            if(!exists[elem]){
+                mergeArray.push(elem);
+                exists[elem]=true;
+            }
+        }
+        
+        for(j=0; j<arr2.length; j++){
+            var elem = arr2[j];
+            if(!exists[elem]){
+                mergeArray.push(elem);
+                exists[elem]=true;
+            }
+        }
+        return mergeArray;
+    }
+    console.log("remove duplicate and merge array output = ", removeDuplicateAndMerge([10,30,20,40],[30,20,40,50]));
+</script>
